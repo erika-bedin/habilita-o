@@ -1,0 +1,28 @@
+INICIO
+
+VAR
+rodas, pessoas : inteiro
+peso : real
+
+escreva("O veículo tem quantas rodas?")
+leia(rodas)
+escreva("Qual o peso do veículo?")
+leia(peso)
+escreva("Quantas pessoas cabem no veículo?")
+leia(pessoas)
+
+Se (rodas >= 4) e (peso >=6000) então
+  escreva("Categoria E")
+Senão se (rodas >= 4) e (pessoas >=8) então
+  escreva("Categoria D")
+Senão se (peso >=3500) e (peso <= 5999) então
+  escreva("Categoria C")
+Senão se (pessoas >= 8) e (peso >=3500) então
+  escreva("Categoria B")
+
+Senão
+  escreva("Categoria A")
+
+fimse
+
+FIMALGORITMO
